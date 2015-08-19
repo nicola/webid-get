@@ -16,6 +16,8 @@ var webidGet = require('webid-get')
 var uri = 'http://www.w3.org/People/Berners-Lee/card#me'
 webidGet(uri, function (err, webid) {
   // webid will be a jsonld object by default
+  console.log(webid['http://xmlns.com/foaf/0.1/name'])
+  // > Tim Berners-Lee
 })
 webidGet(uri, 'text/turtle', function (err, webid) {
   // webid will be a string of text/turtle
