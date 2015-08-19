@@ -10,7 +10,7 @@ $ npm install --save webid-get
 
 ## Usage
 
-```
+```javascript
 var webidGet = require('webid-get')
 
 var uri = 'http://www.w3.org/People/Berners-Lee/card#me'
