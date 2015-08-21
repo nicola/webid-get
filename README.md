@@ -20,7 +20,7 @@ webidGet(uri, function (err, graph) {
   // webid will be a `rdf-ext` graph
 })
 
-var rdf = rdf.createGraph()
+var graph = rdf.createGraph()
 webidGet(uri, graph, function (err) {
   // webid will be a `rdf-ext` graph
 })
