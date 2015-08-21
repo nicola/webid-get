@@ -4,13 +4,13 @@ A WebID is URL that describes the identity of a user on the web. Getting WebID's
 
 ```bash
 $ curl -X GET https://nicola.databox.me/profile/card#me
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-
-<>
-    <http://purl.org/dc/terms/title> "WebID profile of Nicola Greco" ;
-    a <http://xmlns.com/foaf/0.1/PersonalProfileDocument> ;
-    <http://xmlns.com/foaf/0.1/maker> <#me> ;
-    <http://xmlns.com/foaf/0.1/primaryTopic> <#me> .
+# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# 
+# <>
+#     <http://purl.org/dc/terms/title> "WebID profile of Nicola Greco" ;
+#     a <http://xmlns.com/foaf/0.1/PersonalProfileDocument> ;
+#     <http://xmlns.com/foaf/0.1/maker> <#me> ;
+#     <http://xmlns.com/foaf/0.1/primaryTopic> <#me> .
 ```
 
 However, a WebID can point to other WebIDs of the same user (through `sameAs` and `seeAlso`), or to the user preferences and you very likely, you will need to follow these links to get the user data you want. This code could get very long and redundant, especially if you are using this in multiple projects. So, why not have a very simple command that does all of that for you?
