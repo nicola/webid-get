@@ -1,5 +1,9 @@
 # webid-get
 
+Get a WebID graph
+
+#### Context
+
 A WebID is URL that describes the identity of a user on the web. Getting WebID's data is as easy as a curl request
 
 ```bash
