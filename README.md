@@ -1,6 +1,8 @@
 # webid-get
 
-Get a webid in any linked data format for browsers and Node.js
+Get a webid graph for the browsers and Node.js
+
+- `sameAs`, `seeAlso`, `prefs` link following
 
 ## Install
 
@@ -14,11 +16,13 @@ $ npm install --save webid-get
 var webidGet = require('webid-get')
 
 var uri = 'http://www.w3.org/People/Berners-Lee/card#me'
-webidGet(uri, function (err, webid) {
-  // webid will be a jsonld object by default
+webidGet(uri, function (err, graph) {
+  // webid will be a `rdf-ext` graph
 })
-webidGet(uri, 'text/turtle', function (err, webid) {
-  // webid will be a string of text/turtle
+
+var rdf = rdf.createGraph()
+webidGet(uri, graph, function (err) {
+  // webid will be a `rdf-ext` graph
 })
 ```
 
