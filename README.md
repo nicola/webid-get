@@ -26,10 +26,6 @@ webidGet(uri, graph, function (err) {
 })
 ```
 
-## Command line
-
-See [webid-get-cli](https://npm.im/webid-get-cli)
-
 ## License
 
 MIT &copy; Nicola Greco 2015
