@@ -1,6 +1,6 @@
 {
   "name": "webid-get",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get a webid graph",
   "main": "index.js",
   "scripts": {
